@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物件導向程式設計</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>OOP 學習網站</h2>
+        <nav>
+            <a href="#home">首頁</a>
+            <a href="#concept">核心概念</a>
+            <a href="#example">程式範例</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>物件導向程式設計</h1>
+        <p>Object-Oriented Programming</p>
+        <p>讓程式設計更加簡單、有條理且容易維護。</p>
+        <a href="#concept" class="btn">開始了解</a>
+    </section>
+
+    <section id="concept">
+        <h2>物件導向四大核心概念</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>封裝</h3>
+                <p>將資料與功能整合在一起，保護內部資料。</p>
+            </div>
+            <div class="card">
+                <h3>繼承</h3>
+                <p>子類別可以繼承父類別的屬性與方法。</p>
+            </div>
+            <div class="card">
+                <h3>多型</h3>
+                <p>相同的方法可以依不同物件產生不同結果。</p>
+            </div>
+            <div class="card">
+                <h3>抽象</h3>
+                <p>隱藏複雜細節，只呈現重要功能。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="example">
+        <h2>JavaScript 程式範例</h2>
+        <pre><code>class Student {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    introduce() {
+        return `我是${this.name}，今年${this.age}歲`;
+    }
+}
+
+const student = new Student("小明", 20);</code></pre>
+        <button onclick="showStudent()">執行程式</button>
+        <p id="result">執行結果會顯示在這裡</p>
+    </section>
+
+    <footer>
+        <p>物件導向程式設計介紹網站 © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
